@@ -33,10 +33,13 @@ body {
    margin-bottom: 0.8vh;
 }
 .subtitle {
-   font: normal 20px/23px Roboto, arial, helvetica, sans-serif;
+   font: bold 19px/22px Roboto, arial, helvetica, sans-serif;
    color: #fff;
    margin-bottom: 5.7vh;
    padding-left: 1px;
+}
+.subtitle span {
+   font-weight: normal;
 }
 .level {
    margin: 0 0 13.9vh 3.7%;
