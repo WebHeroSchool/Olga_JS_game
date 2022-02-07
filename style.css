@@ -38,11 +38,8 @@ body {
    margin-bottom: 5.7vh;
    padding-left: 1px;
 }
-.subtitle span {
-   font-weight: normal;
-}
 .level {
-   margin: 0 0 10vh 3.7%;
+   margin: 0 0 13.9vh 3.7%;
 }
 .level__item {
    font: bold 50px/59px Roboto, arial, helvetica, sans-serif;
@@ -53,9 +50,6 @@ body {
    transition: 0.5s ease-in-out;
    text-shadow: 0 0 0 transparent, 0 0 0 transparent;  
    overflow: visible;
-}
-.level__item:last-child {
-   margin-bottom: 13.9vh;
 }
 .level__item:hover {
    content: '';
