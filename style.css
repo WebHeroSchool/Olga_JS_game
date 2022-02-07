@@ -2,7 +2,6 @@ a, a:visited{text-decoration: none;}
 a:hover{text-decoration: none;}
 ul li{list-style: none;}
 img{vertical-align: top;}
-h1{font-size:inherit;font-weight: 400;}
 *,*:before,*:after{
 	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
@@ -17,14 +16,19 @@ body {
    background: url('./img/Background.png');
    background-repeat: no-repeat;
    background-size: cover;
+   max-height: 100vh;
 }
 .wrapper {
-   width: auto;
+   max-width: 1440px;
    height: 100vh;
    padding-left: 102px;
+   position: relative;
+   margin: 0 auto;
+   padding: 12.8vh 0 0 103px;
+   width: auto;
 }
 .title {
-   font: bold 57px/67px Roboto, arial, helvetica, sans-serif;
+   font: bold 57px/67px Roboto, Arial, Helvetica, sans-serif;
    color: #fff;
    padding-top: 129px;
    margin-bottom: 1vh;
