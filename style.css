@@ -60,7 +60,7 @@ body {
    color: white;
    text-shadow: 0 0 10px #d62b2e, 0 0 50px #d62b2e;
 }
-.level__item:active::before {
+.active::before {
    content: '';
    width: 18px;
    height: 18px;
