@@ -27,6 +27,24 @@ body {
    padding: 12.6vh 0 0 103px;
    width: auto;
 }
+.wrapper-game {
+   display: none;
+   width: auto;
+   height: 100vh;
+   justify-content: center;
+   align-items: center;
+   align-content: center;
+   flex-wrap: wrap;
+   margin: 0 auto;
+}
+.ten {
+   width: 100%;
+   max-width: 1440px;
+}
+.sex {
+   width: 60%;
+   max-width: 1440px;
+}
 .title {
    font: bold 57px/67px Roboto, Arial, Helvetica, sans-serif;
    color: #fff;  
@@ -97,11 +115,58 @@ body {
    top: 53.52%;
    transform: rotate(39.26deg);
 }
-.wrapper-invisible {
-   display: none;
-   width: auto;
-   height: 100vh;
-   justify-content: center;
-   align-items: center;
-   align-content: center;
+.flip-card {
+   background-color: transparent;
+   width: 218px;
+   height: 341px;
+   margin: 32px 24px 24px 0;
+   perspective: 1000px;
+}
+.flip-card:hover {
+   animation: move;
+   animation-duration: 1s;
+   animation-fill-mode: forwards;
+   animation-timing-function: ease;
+}
+@keyframes move {
+   50% {
+   transform: rotate(-3.08deg) translateY(-30px);
+   }
+   100% {
+   transform: rotate(0deg) translateY(-22px);
+   }
+}
+.flip-card__inner {
+   position: relative;
+   width: 100%;
+   height: 100%;
+   text-align: center;
+   transition: transform 0.8s;
+   transform-style: preserve-3d;
+}
+.flip-card__front, .flip-card__back {
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   -webkit-backface-visibility: hidden; /* Safari */
+   backface-visibility: hidden;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.flip-card__front {
+   background-image: url('img/рубашка.png');
+}
+.flip-card__back {
+   background-image: url('img/GO.png');
+   transform: rotateY(180deg);
+}
+.flip-card__back-bug {
+   position: absolute;
+   background-image: url('img/КартаBUG.png');
+   background-repeat: no-repeat;
+   background-size: cover;
+   transform: rotateY(180deg);
+}
+.rotate{
+   transform: rotateY(180deg);
 }
