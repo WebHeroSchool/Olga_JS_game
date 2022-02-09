@@ -16,33 +16,31 @@ function deleteCards() {
    wrapperGame.innerHTML = '';
    wrapperGame.className = 'wrapper-game';
 }
-// Создание карт
+// Создание карты
 function createCard(number) {
    for(let i=0; i<number; i++) {
-   const card = document.createElement ('div');
-   card.className = 'flip-card';
-   wrapperGame.appendChild(card);
-   const cardInner = document.createElement ('div');
-   cardInner.className = 'flip-card__inner';
-   card.appendChild(cardInner);
-   const cardFront = document.createElement ('div');
-   cardFront.className = 'flip-card__front';
-   cardInner.appendChild(cardFront);
-   const cardBack = document.createElement ('div');
-   cardBack.className = 'flip-card__back';
-   cardInner.appendChild(cardBack);
- 
-   let rotate = () => {
-      let number = Math.round(Math.random());
-      cardInner.classList.toggle('rotate');
-      if (number === 1) cardBack.classList.add('flip-card__back-bug');
-      let cards = document.querySelectorAll('.flip-card');
-      cards.forEach(card => card.addEventListener('click', deleteCards));
-      }
-      card.addEventListener('click', rotate);
+      const card = document.createElement ('div');
+      wrapperGame.appendChild(card);
+      card.className = 'flip-card';
+      const cardInner = document.createElement ('div');
+      card.appendChild(cardInner);
+      cardInner.className = 'flip-card__inner';
+      const cardFront = document.createElement ('div');
+      cardInner.appendChild(cardFront);
+      cardFront.className = 'flip-card__front';
+      const cardBack = document.createElement ('div');
+      cardInner.appendChild(cardBack);
+      cardBack.className = 'flip-card__back';
+ // Вскрытие карты
+      card.addEventListener('click', () => {
+         let number = Math.round(Math.random());
+         cardInner.classList.toggle('rotate');
+         if (number === 1) cardBack.classList.add('flip-card__back-bug');
+         let cards = document.querySelectorAll('.flip-card');
+         cards.forEach(card => card.addEventListener('click', deleteCards));
+      });
    }
 }
-
 // У словия вывода игрового поля
 function chooseLevel(level) {
    switch(level) {
