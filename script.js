@@ -5,8 +5,6 @@ levelsGame.forEach((levelGame) => {
    levelGame.addEventListener('click', () => {
       levelsGame.forEach((level) => level.classList.remove('active'));
       levelGame.classList.add('active'); 
-      // console.log(levelGame.textContent);
-      // console.log(document.querySelector('.active').innerHTML);
    })    
 })
 // Возврат на окно-меню
@@ -33,15 +31,16 @@ function createCard(number) {
       cardBack.className = 'flip-card__back';
  // Вскрытие карты
       card.addEventListener('click', () => {
-         let number = Math.round(Math.random());
+         let numberRandom = Math.round(Math.random()*(number-1));
          cardInner.classList.toggle('rotate');
-         if (number === 1) cardBack.classList.add('flip-card__back-bug');
-         let cards = document.querySelectorAll('.flip-card');
-         cards.forEach(card => card.addEventListener('click', deleteCards));
-      });
+         let cards = document.querySelectorAll('.flip-card__back');
+         cards[numberRandom].classList.add('flip-card__back-bug');
+         let cardRest = document.querySelectorAll('.flip-card');
+         cardRest.forEach(card => card.addEventListener('click', deleteCards));
+      })
    }
 }
-// У словия вывода игрового поля
+// Условия вывода игрового поля
 function chooseLevel(level) {
    switch(level) {
    case 'Простой':
@@ -57,7 +56,7 @@ function chooseLevel(level) {
    break;
    }
 }
-// Замена окна-меню на игровое поле при нажатии кнопки "начала игры"
+// Смена поля при нажатии кнопки "начала игры"
 const buttonPlay = document.getElementById('button');
 buttonPlay.addEventListener("click", () => {
    document.querySelector('.wrapper').style.display = 'none';
