@@ -26,6 +26,7 @@ body {
    margin: 0 auto;
    padding: 12.6vh 0 0 103px;
    width: auto;
+   box-sizing: border-box;
 }
 .wrapper-game {
    display: none;
@@ -68,7 +69,7 @@ body {
    color: #fff;
    position: relative;
    text-align: left;
-   transition: 0.5s ease-in-out;
+   transition: 0.2s ease-in-out;
    text-shadow: 0 0 0 transparent, 0 0 0 transparent;  
    overflow: visible;
    cursor: pointer;
@@ -119,7 +120,7 @@ body {
    background-color: transparent;
    width: 218px;
    height: 341px;
-   margin: 32px 24px 24px 0;
+   margin: 10px 13px 10px 10px;
    perspective: 1000px;
 }
 .flip-card:hover {
