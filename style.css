@@ -172,7 +172,6 @@ body {
 .rotate{
    transform: rotateY(180deg);
 }
-
 @media (max-width: 1440px) {
    .flip-card {
       min-width: 218px;
