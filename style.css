@@ -17,11 +17,11 @@ body {
    background-image: url('./img/Background.png');
    background-repeat: no-repeat;
    background-size: cover;
-   max-height: 100vh;
+   max-height: 100vh; 
 }
 .wrapper {
    max-width: 1440px;
-   height: 100vh;
+   min-height: 100vh;
    padding-left: 102px;
    position: relative;
    margin: 0 auto;
@@ -172,3 +172,136 @@ body {
 .rotate{
    transform: rotateY(180deg);
 }
+
+
+@media (max-width: 1440px) {
+   .flip-card {
+     min-width: 218px;
+   }
+ } 
+ @media (max-width: 1370px) {
+   .ten {
+     width: 100%;
+   }
+ } 
+ @media (max-width: 1215px) {
+   .wrapper {
+     position: relative;
+     margin: 0 auto;
+     padding: 22.8vh 0 0 103px;
+     width: auto;
+     box-sizing: border-box;
+   }
+   .back__card2 {
+     left: 68.2%;
+   }
+   .flip-card {
+     width: 16vw;
+     min-width: 160px;
+     height: 25vw;
+     margin-top: 5px;
+     margin-bottom: 0;
+   }
+ } 
+ @media (max-width: 1000px) {
+   .sex {
+     width: 80%;
+   } 
+  .flip-card {
+     width: 17vw;
+     min-width: 130px;
+     height: 27vw;
+     margin-top: 5px;
+     margin-bottom: 0;
+   }
+ }
+ @media (max-width: 915px) {
+   .wrapper {
+     padding: 30px;
+   }
+  
+ 
+   /* .level {
+     line-height: 15px;
+   } */
+ 
+   .button {
+     padding: 15px 50px;
+   }
+ 
+   .sex {
+     width: 60%;
+   }
+ 
+  
+ }
+
+
+@media (max-width: 800px)  {
+   .wrapper {
+     padding: 20px;
+   }
+ 
+   .button {
+     padding: 5px 35px;
+   }
+ 
+   .sex {
+     width: 75%;
+   }
+  .ten {
+     width: 90%;
+   }
+  .flip-card {
+     width: 14vw;
+     min-width: 70px;
+     height: 22vw;
+   }
+ }
+
+
+
+ @media (max-width: 500px)  {
+   .wrapper {
+     padding-top: 23vh;
+   }
+ 
+   .subtitle {
+     margin: 0 0 3vh 0;
+   }
+ 
+   .flip-card {
+     min-width: 70px;
+     height: 33vw;
+   }
+ 
+   .button {
+     padding: 15px 40px;
+   }
+ 
+   /* .simple {
+     width: 50%;
+   } */
+ 
+   .sex {
+     width: 100%;
+   }
+  .ten {
+     width: 20%;
+   
+   }
+  .flip-card {
+   flex-wrap: wrap;
+    align-content: space-; 
+     width: 115px;
+     height: 90vw;
+   }
+ }
+ 
+ @media (max-width: 300px)  {
+   .flip-card {
+     width: 20vw;
+     min-width: 115px;
+     height: 60vw;
+   }
+ }
