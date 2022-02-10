@@ -13,8 +13,7 @@ img{vertical-align: top;}
    border: 0;
 }
 body {
-   /* //background-color: #008f6c; */
-   background-color: red;
+   background-color: #008f6c;
    background-image: url('./img/Background.png');
    background-repeat: no-repeat;
    background-size: cover;
@@ -262,36 +261,52 @@ body {
       margin-bottom: 1vh;
    }
 }
-   @media (max-width: 700px)  {
+@media (max-width: 700px)  {
    .wrapper {
-      padding: 38.8vh 0 0 0;
+      padding: 38vh 0 0 0;
+      text-align: center;
+   }
+   .title {
+      padding: 0 10px;
+      text-align: center;
+      font: bold 40px/55px Roboto, Arial, Helvetica, sans-serif;
    }
    .subtitle {
       margin: 0 0 3vh 0;
       text-align: center;
-   }
-   .button {
-      margin: 0 auto;
-   }
-   .title {
-      text-align: center;
+      font: bold 20px/24px Roboto, arial, helvetica, sans-serif;
+      width: auto;
+      padding: 0 20px;
    }
    .level {
-      padding-left: 0;
-      width: 90%;
+      margin: 0 0 50px 0;
+      line-height: 71%;
+      display:flex;
+      align-items: center; 
+      flex-direction:column;
+      }
+   .button {
+      display: inline-block;
       margin: 0 auto;
-      text-align: center;  
+      align-items: center;
+      text-align: center; 
    }
-   .card-1 {
+   .back__card1 {
       left: 36.8%;
-      top: 13vh;
+      top: 10vh;
+      width: 15vw;
    }
-   .card-2 {
-         left: 40.2%;
-         top: 12vh;  
+   .back__card2 {
+      left: 48%;
+      top: 15vh;
+      width: 15vw;
    }
 }
 @media (max-width: 500px)  {
+   .wrapper {
+      padding: 30vh 0 0 0;
+      text-align: center;
+   }
    .flip-card {
       min-width: 70px;
       height: 33vw;
@@ -305,7 +320,22 @@ body {
    .flip-card {
       width: 22vw;
       min-width: 80px;
-      height: 35vw;
+      height: 35vw;    
+   }
+   .title {
+      font: bold 35px/45px Roboto, Arial, Helvetica, sans-serif;
+   }
+   .subtitle {
+      font: bold 15px/20px Roboto, arial, helvetica, sans-serif;
+   }
+   .level__item {
+      font-size: 151%;
+   }
+   .button {
+      display: inline-block;
+      margin: 0 auto;
+      align-items: center;
+      text-align: center; 
    }
 }
 @media (max-width: 360px)  {
