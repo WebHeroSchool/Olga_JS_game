@@ -13,7 +13,8 @@ img{vertical-align: top;}
    border: 0;
 }
 body {
-   background-color: #008f6c;
+   /* //background-color: #008f6c; */
+   background-color: red;
    background-image: url('./img/Background.png');
    background-repeat: no-repeat;
    background-size: cover;
@@ -173,135 +174,119 @@ body {
    transform: rotateY(180deg);
 }
 
-
-
 @media (max-width: 1440px) {
-   .flip-card {
-     min-width: 218px;
-   }
- } 
- @media (max-width: 1370px) {
-   .ten {
-     width: 100%;
-   }
- } 
- @media (max-width: 1215px) {
-   .wrapper {
-     position: relative;
-     margin: 0 auto;
-     padding: 22.8vh 0 0 103px;
-     width: auto;
-     box-sizing: border-box;
-   }
-   .back__card2 {
-     left: 68.2%;
-   }
-   .flip-card {
-     width: 16vw;
-     min-width: 160px;
-     height: 25vw;
-     margin-top: 5px;
-     margin-bottom: 0;
-   }
- } 
- @media (max-width: 1000px) {
-   .sex {
-     width: 80%;
-   } 
-  .flip-card {
-     width: 17vw;
-     min-width: 130px;
-     height: 27vw;
-     margin-top: 5px;
-     margin-bottom: 0;
-   }
- }
- @media (max-width: 915px) {
-   .wrapper {
-     padding: 30px;
-   }
-  
- 
-   /* .level {
-     line-height: 15px;
-   } */
- 
-   .button {
-     padding: 15px 50px;
-   }
- 
-   .sex {
-     width: 60%;
-   }
- 
-  
- }
-
-
+.flip-card {
+   min-width: 218px;
+}
+} 
+@media (max-width: 1370px) {
+.ten {
+   width: 100%;
+}
+.back__card2 {
+   left: 72%;
+}
+} 
+@media (max-width: 1215px) {
+.wrapper {
+   padding: 20vh 0 0 103px;
+}   
+.back__card1 {
+   left: 60%;
+   top: 47vh;
+   width: 20vw;
+}
+.back__card2 {
+   left: 70%;
+   top: 47%;
+   width: 20vw;
+}
+.flip-card {
+   width: 16vw;
+   min-width: 160px;
+   height: 25vw;
+   margin-top: 5px;
+   margin-bottom: 0;
+}
+} 
+@media (max-width: 1000px) {
+.wrapper {
+   padding: 12vh 0 0 80px;
+}   
+.sex {
+   width: 80%;
+} 
+.flip-card {
+   width: 17vw;
+   min-width: 130px;
+   height: 27vw;
+   margin-top: 5px;
+   margin-bottom: 0;
+}
+}
+@media (max-width: 915px) {
+.title {
+   font: bold 53px/65px Roboto, Arial, Helvetica, sans-serif;
+}
+.subtitle {
+   font: bold 16px/20px Roboto, arial, helvetica, sans-serif;
+}
+.subtitle span {
+   font-weight: normal;
+}
+.level__item {
+   line-height: 45px;
+}  
+.button {
+   padding: 15px 50px;
+} 
+.sex {
+   width: 60%;
+} 
+}
 @media (max-width: 800px)  {
-   .wrapper {
-     padding: 20px;
-   }
- 
-   .button {
-     padding: 5px 35px;
-   }
- 
-   .sex {
-     width: 75%;
-   }
-  .ten {
-     width: 90%;
-   }
-  .flip-card {
-     width: 14vw;
-     min-width: 70px;
-     height: 22vw;
-   }
- }
-
-
-
- @media (max-width: 500px)  {
-   .wrapper {
-     padding-top: 23vh;
-   }
- 
-   .subtitle {
-     margin: 0 0 3vh 0;
-   }
- 
-   .flip-card {
-     min-width: 70px;
-     height: 33vw;
-   }
- 
-   .button {
-     padding: 15px 40px;
-   }
- 
-   /* .simple {
-     width: 50%;
-   } */
- 
-   .sex {
-     width: 100%;
-   }
-  .ten {
-     width: 100%;
-   
-   }
-  .flip-card {
+.sex {
+   width: 75%;
+}
+.ten {
+   width: 90%;
+}
+.flip-card {
+   width: 14vw;
+   min-width: 70px;
+   height: 22vw;
+}
+}
+@media (max-width: 500px)  {
+.wrapper {
+   padding-top: 23vh;
+}
+.subtitle {
+   margin: 0 0 3vh 0;
+}
+.flip-card {
+   min-width: 70px;
+   height: 33vw;
+}
+.button {
+   padding: 15px 40px;
+}
+.sex {
+   width: 100%;
+}
+.ten {
+   width: 100%;
+}
+.flip-card {
    width: 22vw;
-     min-width: 80px;
-     height: 35vw;
-   }
- }
- 
- @media (max-width: 360px)  {
-   .flip-card {
-     width: 25vw;
-     min-width: 80px;
-     height: 40vw;
-   }
- }
+   min-width: 80px;
+   height: 35vw;
+}
+}
+@media (max-width: 360px)  {
+.flip-card {
+   width: 25vw;
+   min-width: 80px;
+   height: 40vw;
+}
+}
